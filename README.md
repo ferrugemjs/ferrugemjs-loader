@@ -10,13 +10,12 @@ ferrugemjs-node is a simple webpack loader to converte template HTML engine to g
 ####Usage
 
 ```js
-module.exports = {
-  module: {
-    rules: [
-      {test: /\.template\.html$/, use: 'ferrugemjs-loader'}
-    ]
-  }
-};
+rules: [
+    {
+      test: /\.html$/
+      ,loader:'ferrugemjs-loader'
+    }
+]
 ```
 
 ## License

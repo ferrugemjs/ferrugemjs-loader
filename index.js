@@ -1,7 +1,7 @@
 var fjsparse = require("ferrugemjs-node");
-var loaderUtils = require("loader-utils");
 
 module.exports = function(source) {
-    var options = loaderUtils.getOptions(this);
-    return fjsparse(source,{viewModel:options.viewModel})
+    var pathTmp = this.resourcePath.match(/(\w|[-.])+$/g)[0];
+    pathTmp = pathTmp.substring(0,pathTmp.lastIndexOf("."));
+    return fjsparse(source,{viewModel:pathTmp})
 };
