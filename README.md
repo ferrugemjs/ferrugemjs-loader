@@ -30,6 +30,11 @@ module: {
 to work with webpack there is 'ferrugemjs/platform' as a application bootstrapping.
 
 ```typescript
+import bootstrapper from "ferrugemjs/bootstrapper";
+```
+or
+
+```typescript
 import platform from "ferrugemjs/platform";
 import init_app from "./init-app";
  
@@ -39,7 +44,6 @@ platform
         document.getElementById("init_app_id")
     );
 ```
-
 
 ## License
 
