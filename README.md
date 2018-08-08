@@ -15,7 +15,15 @@ module: {
     rules: [
         {
           test: /\.html$/
-          ,loader:'ferrugemjs-loader'
+          ,loaders:[
+		{ 
+			loader: 'ferrugemjs-loader',
+			options: {
+				templateExtension:'.html', // default is '.html'
+				env: 'production' // default is 'development'
+			} 
+		}
+	   ]
         }
     ]
 },
