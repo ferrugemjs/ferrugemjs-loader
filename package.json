@@ -27,6 +27,6 @@
   "homepage": "https://github.com/ferrugemjs/ferrugemjs-loader#readme",
   "devDependencies": {},
   "dependencies": {
-    "ferrugemjs-node": "2.1.5"
+    "ferrugemjs-node": "2.1.6"
   }
 }
