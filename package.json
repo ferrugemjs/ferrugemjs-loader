@@ -1,6 +1,6 @@
 {
   "name": "@ferrugemjs/loader",
-  "version": "3.0.4",
+  "version": "3.0.5",
   "description": "@ferrugemjs/loader is a simple webpack loader to converte template HTML engine to google incremental-DOM js",
   "main": "index.js",
   "scripts": {},
@@ -25,8 +25,8 @@
     "url": "https://github.com/ferrugemjs/ferrugemjs-loader/issues"
   },
   "homepage": "https://github.com/ferrugemjs/ferrugemjs-loader#readme",
-  "devDependencies": {},
-  "dependencies": {
-    "@ferrugemjs/compile": "3.0.6"
-  }
+  "devDependencies": {
+    "@ferrugemjs/compile": "3.0.7"
+  },
+  "dependencies": {}
 }
