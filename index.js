@@ -6,7 +6,7 @@ module.exports = function (source) {
     pathTmp = pathTmp.substring(0, pathTmp.lastIndexOf("."));
     return fjsparse.default(source, {
         env: this.query.env || "development",
-        resourcePath: path.relative(__dirname, this.resourcePath).replace('../../', ''),
+        resourcePath: path.relative(__dirname, this.resourcePath).replace('../../', '').replace(/[\\/]+/g, '/').replace(/^([a-zA-Z]+:|\.\/)/, ''),
         viewModel: pathTmp,
         templateExtension: this.query.templateExtension || ".html"
     })
